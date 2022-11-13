@@ -190,8 +190,8 @@ div{
 }
 
 .single {
-    max-width: 375px;
-    max-height: 300px;
+    max-width: 350px;
+    max-height: 200px;
     padding: 10px;
     margin: 5px;
     border: none;
@@ -206,7 +206,7 @@ div{
 }
 
 .rectangle {
-    max-width: 375px;
+    max-width: 350px;
     max-height: 300px;
     padding: 10px;
     margin: 5px;
