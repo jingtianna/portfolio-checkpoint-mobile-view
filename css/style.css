@@ -265,7 +265,7 @@ div{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
 }
 
 #education1, #education2{
