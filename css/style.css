@@ -179,6 +179,9 @@ p cite {
 div{
     padding: 10px;
 	margin: 5px;
+	max-width: 350px;
+	max-height:400px;
+	overflow: scroll;
 }
 
 .head_photo {
