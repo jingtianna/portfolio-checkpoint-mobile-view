@@ -1,0 +1,296 @@
+body {
+    /*background-color: powderblue;
+	background-image: linear-gradient(to bottom right, pink, powderblue);*/
+    /* background: linear-gradient(to bottom right, pink, powderblue); */
+
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto auto;
+    grid-template-columns: 100%;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    align-items: center;
+
+}
+
+header {
+    background: black;
+    
+}
+
+/*navigation bar*/
+
+nav > ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    border: 1px solid white ;
+}
+  
+nav > ul > li{
+    padding: 10px;
+    text-align: center;
+}
+
+nav > ul > li > a {
+    font-size: 20px;
+    color: white;
+    align-items: center;
+    text-decoration: none;
+    
+}
+
+
+main {
+    background: whitesmoke;
+    padding: 10px;
+    
+}
+footer {
+    background: white;
+    text-align: center;
+    padding: 10px;
+}
+
+aside {
+    font-style:italic;
+    padding: 0px;
+    margin: 0px;
+    background-image: url('../image/index/color2.jpg');
+}
+
+
+
+form {
+    margin: 15px;
+    padding: 10px;
+}
+
+
+.active{
+    color: plum;
+}
+
+.skip{
+    display: inline;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border: 1px solid black;
+}
+
+.ul2 > li {
+    border: 1px solid white;
+
+}
+
+
+.return {
+    margin: 10px;
+    padding: 5px;
+    gap: 5px;
+    
+}
+
+
+.bulletpoints {
+    list-style: circle;
+    padding: 10px;
+	margin: 5px;
+}
+
+h1{
+    font-size: 30px;
+    padding: 10px;
+	margin: 5px;
+}
+
+.intro{
+    text-align: center;
+    
+}
+/*animation > div*/
+#hi {
+    
+    background: linear-gradient(#8a82fb,#407ed7);
+    width: 220px;
+	padding: 10px;
+	margin: 5px;
+}
+
+#hi > h1 {
+    text-align: center;
+
+}
+
+.pulse {
+    animation: pulse 2.5s ease-in-out infinite both;
+   
+}
+
+@keyframes pulse{
+    100%{
+        transform: scale(1.1);
+        opacity:0;
+        background-color: #8a82fb;
+    }
+}
+
+
+  
+/* no animation if user prefers */
+@media (prefers-reduced-motion) {
+    .pulse {
+      animation: none;
+    }
+}
+
+h2 {
+    font-size: 20px;
+    padding: 10px;
+	margin: 5px;
+}
+
+h3{
+    font-size: 15px;
+    padding: 10px;
+	margin: 5px;
+}
+
+h4 {
+    font-size: 10px;
+    padding: 10px;
+	margin: 5px;
+}
+p{
+    padding: 10px;
+	margin: 5px;
+}
+
+p cite {
+    font-size: 10px;
+    padding: 10px;
+	margin: 0;
+}
+
+div{
+    padding: 10px;
+	margin: 5px;
+}
+
+.head_photo {
+    width: 200px;
+    height: 200px;
+	padding: 10px;
+	margin: 5px;
+    border-radius: 50%;
+}
+
+.single {
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+}
+
+.square {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+}
+
+.rectangle {
+    width: 380px;
+    height: 300px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+}
+
+.vertical {
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+}
+    
+.container {
+    position: relative;
+    width: 50%;
+}
+
+.hoverimage {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+      
+.container:hover .overlay {
+        opacity: 1;
+}
+      
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+
+#flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#education1, #education2{
+    padding:0;
+    margin:0;
+    overflow:scroll;
+}
+
+@media screen and (min-width: 375px) {
+    
+    .intro{
+        text-align: left;
+    }
+        
+}
+    
+@media screen and (min-width: 800px) {
+    
+    
+
+    nav > ul > li {
+        display: inline-block;
+    }
+        
+    
+        
+        
+}
